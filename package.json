@@ -1,0 +1,14 @@
+{
+  "name": "educare-talent-result",
+  "version": "1.0.0",
+  "description": "Educare Talent Test Result Portal",
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}
