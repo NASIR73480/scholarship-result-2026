@@ -39,9 +39,18 @@ form.addEventListener("submit", async function (e) {
     if (!isNaN(marks)) {
       percentage = marks.toFixed(2);
 
-      if (marks >= 60) {
+      if (marks >= 90) {
+        eligibilityText = "🎉 Congratulations! You have been awarded 100% Scholarship.";
+        scholarshipClass = "success";
+      } else if (marks >= 80) {
+        eligibilityText = "🎉 Congratulations! You have been awarded 50% Scholarship.";
+        scholarshipClass = "success";
+      } else if (marks >= 60) {
         eligibilityText = "🎉 Congratulations! You have been awarded 20% Scholarship.";
         scholarshipClass = "success";
+      } else {
+        eligibilityText = "Not Eligible for Scholarship";
+        scholarshipClass = "fail";
       }
     }
 
